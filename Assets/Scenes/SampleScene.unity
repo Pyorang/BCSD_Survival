@@ -240,6 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentGun: {fileID: 780721797}
+  originPos: {x: 0, y: 0, z: 0}
 --- !u!82 &372079839
 AudioSource:
   m_ObjectHideFlags: 0
@@ -336,6 +337,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &493522816 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3968331098899573409, guid: 25e2192fd6192244bb0e05f51826bff2, type: 3}
+  m_PrefabInstance: {fileID: 1449241367}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &590712373
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5696,13 +5702,13 @@ MonoBehaviour:
   fireRate: 0.2
   reloadTime: 2
   damage: 30
-  reloadBulletCount: 30
-  currentBulletCount: 30
+  reloadBulletCount: 10
+  currentBulletCount: 10
   maxBulletCount: 0
-  carryBulletCount: 0
-  retroActionForce: 0
-  retroActionFineSightForce: 0
-  fineSightOriginPos: {x: 0, y: 0, z: 0}
+  carryBulletCount: 23
+  retroActionForce: 0.3
+  retroActionFineSightForce: 0.7
+  fineSightOriginPos: {x: 0.5, y: 0.2, z: -0.586}
   anim: {fileID: 780721798}
   muzzleFlash: {fileID: 1082287415}
   fire_Sound: {fileID: 8300000, guid: 1ab550ddc092a0d4c8fb0d6860f6d85a, type: 3}
@@ -5716,7 +5722,7 @@ Animator:
   m_GameObject: {fileID: 780721795}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f65c68b617321694996b083e3f9cf30d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6079,13 +6085,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082287412}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -3.0709996, y: 0.371, z: 0.40199995}
-  m_LocalScale: {x: 0.09999999, y: 0.10000001, z: 0.10000002}
+  m_LocalRotation: {x: -0.9988932, y: 0.044137526, z: -0.014154505, w: 0.007989375}
+  m_LocalPosition: {x: 0.00019, y: 0.02097, z: -0.00071}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 746699530}
-  m_Father: {fileID: 780721796}
+  m_Father: {fileID: 493522816}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &1082287414
 ParticleSystemRenderer:
@@ -11195,8 +11201,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 25e2192fd6192244bb0e05f51826bff2, type: 3}
-      insertIndex: 1
+    - targetCorrespondingSourceObject: {fileID: 3968331098899573409, guid: 25e2192fd6192244bb0e05f51826bff2, type: 3}
+      insertIndex: 0
       addedObject: {fileID: 1082287413}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 25e2192fd6192244bb0e05f51826bff2, type: 3}
