@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody myRigid;
     private GunController theGunController;
     private CrossHair theCrossHair;
+    private Status_Controller theStatusController;
 
     void Start()
     {
@@ -57,6 +58,7 @@ public class PlayerController : MonoBehaviour
         myRigid = GetComponent<Rigidbody>();
         theGunController = FindObjectOfType <GunController>();
         theCrossHair = FindObjectOfType <CrossHair>();
+        theStatusController = FindObjectOfType<Status_Controller>();
 
         //√ ±‚»≠
         applySpeed = walkSpeed;
@@ -153,7 +155,7 @@ public class PlayerController : MonoBehaviour
         {
             Crouch();
         }
-
+        theStatusController.DecreaseStamina(100);
         myRigid.velocity = transform.up * jumpForce;
     }
 
@@ -180,6 +182,7 @@ public class PlayerController : MonoBehaviour
 
         isRun = true;
         theCrossHair.RunningAnimation(isRun);
+        theStatusController.DecreaseStamina(10);
         applySpeed = runSpeed;
     }
 
