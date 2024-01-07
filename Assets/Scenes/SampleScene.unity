@@ -390,6 +390,59 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 806ecabe5485d7c488f329029fc40d55, type: 3}
+--- !u!1 &84551571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 84551573}
+  - component: {fileID: 84551574}
+  m_Layer: 0
+  m_Name: DataBase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &84551573
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84551571}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 43.81214, y: 0.15263996, z: 64.27617}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &84551574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84551571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a47eee712ae021a44b4cbbe052c84f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemEffects:
+  - itemName: Potion Yellow
+    part:
+    - SP
+    - HUNGRY
+    - THIRSTY
+    num: f40100006400000064000000
+  thePlayerStatus: {fileID: 1980563085}
+  theWeaponManager: {fileID: 372079840}
 --- !u!224 &98292703 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 322106130297051303, guid: 806ecabe5485d7c488f329029fc40d55, type: 3}
@@ -16762,6 +16815,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1547e088976e0ef4299ebbb6f5547648, type: 3}
+--- !u!1001 &3241474049609957610
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4844880929418125247, guid: 39835f8b42249eb4e964cfd9124b60ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 42.305897
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844880929418125247, guid: 39835f8b42249eb4e964cfd9124b60ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844880929418125247, guid: 39835f8b42249eb4e964cfd9124b60ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 63.544662
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844880929418125247, guid: 39835f8b42249eb4e964cfd9124b60ab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844880929418125247, guid: 39835f8b42249eb4e964cfd9124b60ab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000021855694
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844880929418125247, guid: 39835f8b42249eb4e964cfd9124b60ab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844880929418125247, guid: 39835f8b42249eb4e964cfd9124b60ab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844880929418125247, guid: 39835f8b42249eb4e964cfd9124b60ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844880929418125247, guid: 39835f8b42249eb4e964cfd9124b60ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4844880929418125247, guid: 39835f8b42249eb4e964cfd9124b60ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5221828272085026053, guid: 39835f8b42249eb4e964cfd9124b60ab, type: 3}
+      propertyPath: m_Name
+      value: Potion Yellow item
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39835f8b42249eb4e964cfd9124b60ab, type: 3}
 --- !u!1001 &9017167274933717856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16832,3 +16942,5 @@ SceneRoots:
   - {fileID: 1513502411}
   - {fileID: 1112776873}
   - {fileID: 9017167274933717856}
+  - {fileID: 3241474049609957610}
+  - {fileID: 84551573}
