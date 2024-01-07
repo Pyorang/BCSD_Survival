@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Gun1
   m_EditorClassIdentifier: 
   itemName: SubMachineGun1
+  itemDesc: "\uAC00\uC7A5 \uAE30\uBCF8\uC801\uC778\n\uC11C\uBE0C\uBA38\uC2E0\uAC74"
   itemType: 0
   itemImage: {fileID: 21300000, guid: 9221ed3d82ed3904d9a6fb71f5d86e39, type: 3}
   itemPrefab: {fileID: 8717563416704258975, guid: ba82c0e2a12d9664e9bebff129ed5a73, type: 3}
