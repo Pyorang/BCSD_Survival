@@ -49,7 +49,6 @@ public class WeaponManager : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(isChangeWeapon);
         for (int i = 0; i < guns.Length; i++)
         {
             gunDictionary.Add(guns[i].gunName, guns[i]);
