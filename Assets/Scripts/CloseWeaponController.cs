@@ -15,6 +15,9 @@ public abstract class CloseWeaponController : MonoBehaviour
 
     protected RaycastHit hitInfo;
 
+    [SerializeField]
+    LayerMask layermask;
+
     protected void TryAttack()
     {
         if(!Inventory.inventoryActivated)
@@ -51,7 +54,7 @@ public abstract class CloseWeaponController : MonoBehaviour
 
     protected bool CheckObject()
     {
-        if (Physics.Raycast(transform.position, transform.forward, out hitInfo, currentCloseWeapon.range))
+        if (Physics.Raycast(transform.position, transform.forward, out hitInfo, currentCloseWeapon.range, layermask))
         {
             return true;
         }

@@ -1561,6 +1561,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCloseWeapon: {fileID: 1126226799}
+  layermask:
+    serializedVersion: 2
+    m_Bits: 127
 --- !u!114 &372079838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1576,6 +1579,9 @@ MonoBehaviour:
   currentGun: {fileID: 780721797}
   isFineSightMode: 0
   originPos: {x: 0, y: 0, z: 0}
+  layermask:
+    serializedVersion: 2
+    m_Bits: 127
   theCam: {fileID: 963194227}
   hit_effect_prefab: {fileID: 2756398418883077756, guid: a2d5184cf59f0e84da67c0854b55b246, type: 3}
 --- !u!82 &372079839
@@ -1730,6 +1736,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCloseWeapon: {fileID: 1134422085}
+  layermask:
+    serializedVersion: 2
+    m_Bits: 127
 --- !u!114 &372079843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1743,6 +1752,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCloseWeapon: {fileID: 1618519587}
+  layermask:
+    serializedVersion: 2
+    m_Bits: 127
 --- !u!1 &389229149
 GameObject:
   m_ObjectHideFlags: 0
