@@ -62,7 +62,7 @@ public class CraftManual : MonoBehaviour
 
     private void Build()
     {
-        if(isPreviewActivated)
+        if(isPreviewActivated && go_Preview.GetComponent<PreviewObject>().isBuildable())
         {
             Instantiate(go_Prefab, hitInfo.point, Quaternion.identity);
             Destroy(go_Preview);
@@ -75,7 +75,8 @@ public class CraftManual : MonoBehaviour
 
     private void PreviewPositionUpdate()
     {
-        if(Physics.Raycast(tf_Player.position, tf_Player.forward, out hitInfo, range, layerMask))
+        GameManager.isOpenCraftManual = false;
+        if (Physics.Raycast(tf_Player.position, tf_Player.forward, out hitInfo, range, layerMask))
         {
             if(hitInfo.transform != null)
             {
@@ -87,7 +88,8 @@ public class CraftManual : MonoBehaviour
 
     private void Cancel()
     {
-        if(isPreviewActivated)
+        GameManager.isOpenCraftManual = false;
+        if (isPreviewActivated)
             Destroy(go_Preview);
 
         isActivated = false;
@@ -96,6 +98,7 @@ public class CraftManual : MonoBehaviour
         go_Prefab = null;
 
         go_BaseUI.SetActive(false);
+        GameManager.isOpenCraftManual = false;
     }
 
     private void Window()
@@ -110,12 +113,14 @@ public class CraftManual : MonoBehaviour
     {
         isActivated = true;
         go_BaseUI.SetActive(true);
+        GameManager.isOpenCraftManual = true;
     }
 
     private void CloseWindow()
     {
         isActivated = false;
         go_BaseUI.SetActive(false);
+        GameManager.isOpenCraftManual = false;
     }
 
 }
