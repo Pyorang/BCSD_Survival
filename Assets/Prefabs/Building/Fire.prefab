@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7512547094033110096}
   - component: {fileID: 1150305646215697717}
   - component: {fileID: 7392921699928271242}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fire (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4839,7 +4839,7 @@ GameObject:
   - component: {fileID: 7219018436606510960}
   - component: {fileID: 7775065409773635751}
   - component: {fileID: 3234907469935987308}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4922,7 +4922,7 @@ GameObject:
   - component: {fileID: 3931206962730394753}
   - component: {fileID: 6679084155135258487}
   - component: {fileID: 2203015184273630108}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9749,7 +9749,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8850280561285888430}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9843,6 +9843,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d53e0ff70d4d8a34f85937bf235f4ef7, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9920,6 +9924,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d53e0ff70d4d8a34f85937bf235f4ef7, type: 3}
       propertyPath: m_Name
       value: Wall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d53e0ff70d4d8a34f85937bf235f4ef7, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9999,6 +10007,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d53e0ff70d4d8a34f85937bf235f4ef7, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10076,6 +10088,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d53e0ff70d4d8a34f85937bf235f4ef7, type: 3}
       propertyPath: m_Name
       value: Wall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d53e0ff70d4d8a34f85937bf235f4ef7, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
