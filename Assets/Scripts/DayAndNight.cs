@@ -8,8 +8,6 @@ public class DayAndNight : MonoBehaviour
     [SerializeField]
     private float secondPerRealTimeSecond;  // 게임 세계의 100초 = 현실 세계의 1초
 
-    private bool isNight = false;
-
     [SerializeField]
     private float fogDensityCalc;       //증감량 비율
 
@@ -21,7 +19,7 @@ public class DayAndNight : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        isNight = false;
+        GameManager.isNight = false;
         dayFogDensity = RenderSettings.fogDensity;
     }
 
@@ -31,11 +29,11 @@ public class DayAndNight : MonoBehaviour
         transform.Rotate(Vector3.right, 0.1f * secondPerRealTimeSecond * Time.deltaTime);
 
         if (transform.eulerAngles.x >= 170)
-            isNight = true;
+            GameManager.isNight = true;
         else if (transform.eulerAngles.x >= -50)
-            isNight = false;
+            GameManager.isNight = false;
 
-        if(isNight)
+        if(GameManager.isNight)
         {
             if(currentFogDensity<=nightFogDensity) 
             {
